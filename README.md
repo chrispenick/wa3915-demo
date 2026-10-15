@@ -27,9 +27,18 @@ uv sync
 
 ## Prerequisite primer
 
+Run this before M1 if students are new to async Python. No ADK, no API key required.
+
 | Demo | Topic | Command |
 |------|-------|---------|
 | A0 async/await | Python asyncio fundamentals (no ADK) | `uv run python a0_async_intro/async_demo.py` |
+
+> **A0 covers three scenes (~8 min):**
+> - **Scene 1 — Coroutines:** `async def` returns a coroutine object; `await` is what actually runs it.
+> - **Scene 2 — Sequential vs concurrent:** `asyncio.gather()` over 5 simulated API calls drops wall-clock time from 5 s to 1.2 s (4× speedup) — same single thread, no parallelism.
+> - **Scene 3 — Tasks:** `create_task()` for fire-and-forget, `task.cancel()` / `CancelledError`, and `asyncio.wait(FIRST_COMPLETED)` for racing coroutines.
+>
+> Talk track: `talk-tracks/a0-async-intro.md`
 
 ## Appendices (A1–A4)
 
