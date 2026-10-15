@@ -37,7 +37,7 @@ async def main():
             session_id=session.id,
             new_message=types.Content(role="user", parts=[types.Part(text=msg)]),
         ):
-            if event.is_final_response():
+            if event.is_final_response() and event.content and event.content.parts:
                 print(f"Agent: {event.content.parts[0].text}")
 
     print(f"\nPlugin total: {plugin.count} requests")
