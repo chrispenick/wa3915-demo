@@ -25,6 +25,12 @@ uv sync
 
 > **M8 note:** The M8 demo runs the ADK API server locally (`http://localhost:8000`). It does not perform a live Cloud Run or Agent Engine deployment. The talk track at `talk-tracks/m8-deploy.md` covers the full deployment path with illustrated commands and canned output.
 
+## Prerequisite primer
+
+| Demo | Topic | Command |
+|------|-------|---------|
+| A0 async/await | Python asyncio fundamentals (no ADK) | `uv run python a0_async_intro/async_demo.py` |
+
 ## Appendices (A1–A4)
 
 Standalone bonus demos covering capability areas not shown in M1–M8. Each runs with only the Vocareum Gemini API key — no additional cloud setup required.
